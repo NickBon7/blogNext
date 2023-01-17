@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "../styles/BlogCard.module.css";
+import Image from 'next/image';
 
 const BlogPost = ({ title, author, coverPhoto, datePublished, slug }) => {
   return (
