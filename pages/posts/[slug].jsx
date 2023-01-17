@@ -105,9 +105,10 @@ const Article = ({ post }) => {
           src={post.coverPhoto.url}
           className={styles.cover}
           alt="coverPhoto"
+          layout="fill"
         />
         <div className={styles.title}>
-          <Image src={post.author.avatar.url} alt="avturl" />
+          <Image src={post.author.avatar.url} alt="avturl" layout="fill" />
           <div className={styles.authtext}>
             <h6>By {post.author.name}</h6>
             <h6 className={styles.date}>{post.datePublished}</h6>
