@@ -2,6 +2,7 @@ import styles from "../../styles/Slug.module.css";
 import { GraphQLClient, gql } from "graphql-request";
 import LikePng from "../../assets/like.png";
 import { useState, useRef } from "react";
+import Link from "next/link";
 const graphcms = new GraphQLClient(
   "https://api-eu-west-2.hygraph.com/v2/cl9kbzpde310d01t9go1tdb92/master"
 );
@@ -94,18 +95,18 @@ const Article = ({ post }) => {
   };
   return (
     <>
-      <a href="/" className={styles.buttonBck}>
+      <Link href="/" className={styles.buttonBck}>
         Back
-      </a>
+      </Link>
       <div className={styles.blog}>
         <h3>{post.title}</h3>
-        <img
+        <Image
           src={post.coverPhoto.url}
           className={styles.cover}
           alt="coverPhoto"
         />
         <div className={styles.title}>
-          <img src={post.author.avatar.url} alt="avturl" />
+          <Image src={post.author.avatar.url} alt="avturl" />
           <div className={styles.authtext}>
             <h6>By {post.author.name}</h6>
             <h6 className={styles.date}>{post.datePublished}</h6>
