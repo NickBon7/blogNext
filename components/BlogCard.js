@@ -7,14 +7,14 @@ const BlogPost = ({ title, author, coverPhoto, datePublished, slug }) => {
     <div className={styles.card}>
       <Link href={"/posts/" + slug}>
         <div className={styles.imgContainer}>
-          <Image src={coverPhoto.url} alt="" layout="fill" />
+          <Image src={coverPhoto.url} alt="" width={500} height={350} />
         </div>
       </Link>
       <div className={styles.text}>
         <h2>{title}</h2>
         <div className={styles.details}>
           <div className={styles.author}>
-            //<Image src={author.avatar.url} alt="" width={500} height={500} />
+            <Image src={author.avatar.url} alt="" width={50} height={50} />
             <h3>{author.name}</h3>
           </div>
         </div>
