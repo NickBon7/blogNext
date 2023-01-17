@@ -3,6 +3,7 @@ import { GraphQLClient, gql } from "graphql-request";
 import LikePng from "../../assets/like.png";
 import { useState, useRef } from "react";
 import Link from "next/link";
+import Image from 'next/image';
 const graphcms = new GraphQLClient(
   "https://api-eu-west-2.hygraph.com/v2/cl9kbzpde310d01t9go1tdb92/master"
 );
