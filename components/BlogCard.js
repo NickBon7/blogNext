@@ -7,7 +7,7 @@ const BlogPost = ({ title, author, coverPhoto, datePublished, slug }) => {
     <div className={styles.card}>
       <Link href={"/posts/" + slug}>
         <div className={styles.imgContainer}>
-          <Image src={coverPhoto.url} alt="" width={500} height={150} />
+          <Image src={coverPhoto.url} alt="" width={600} height={100} />
         </div>
       </Link>
       <div className={styles.text}>
