@@ -101,14 +101,20 @@ const Article = ({ post }) => {
       </Link>
       <div className={styles.blog}>
         <h3>{post.title}</h3>
-        <Image
+         <Image
           src={post.coverPhoto.url}
           className={styles.cover}
           alt="coverPhoto"
-          layout="fill"
+          width={960}
+          height={261}
         />
         <div className={styles.title}>
-          <Image src={post.author.avatar.url} alt="avturl" layout="fill" />
+          <Image
+            src={post.author.avatar.url}
+            alt="avturl"
+            width={50}
+            height={50}
+          />
           <div className={styles.authtext}>
             <h6>By {post.author.name}</h6>
             <h6 className={styles.date}>{post.datePublished}</h6>
