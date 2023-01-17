@@ -14,7 +14,7 @@ const BlogPost = ({ title, author, coverPhoto, datePublished, slug }) => {
         <h2>{title}</h2>
         <div className={styles.details}>
           <div className={styles.author}>
-            <Image src={author.avatar.url} alt="" layout="fill" />
+            <Image src={author.avatar.url} alt=""  />
             <h3>{author.name}</h3>
           </div>
         </div>
